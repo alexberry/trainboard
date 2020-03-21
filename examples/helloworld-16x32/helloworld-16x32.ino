@@ -115,15 +115,7 @@ void setup() {
 
   //display.setFastUpdate(true);
   display.clearDisplay();
-  display.setTextColor(myCYAN);
-  display.setCursor(2,0);
-  display.print("Hello");
-  display.setTextColor(myMAGENTA);
-  display.setCursor(2,8);
-  display.print("World");
   display_update_enable(true);
-
-  delay(3000);
 
 }
 
@@ -160,16 +152,4 @@ void scroll_text(uint8_t ypos, unsigned long scroll_delay, String text, uint8_t 
 void loop() {
   scroll_text(1,50,"Hello World!",96,96,250);
   display.clearDisplay();
-  delay(1000);
-  for (uint8_t dimm=255; dimm>0; dimm--)
-  {
-    display.setBrightness(dimm);
-    delay(5);
-  }
-  for (uint8_t dimm=0; dimm<255; dimm++)
-  {
-    display.setBrightness(dimm);
-    delay(5);
-  }
-
 }
