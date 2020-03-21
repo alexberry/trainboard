@@ -17,7 +17,7 @@ D8  > A6 # C (for 1/8 scan rate and above)
 GND > B4 # Additional ground / unused multiplex input
 ```
 
-### ESP to IN on RGB (1/6 Scan, 32x64 Resolution)
+### ESP to IN on RGB (1/16 Scan, 32x64 Resolution)
 ```
 D0  > B7 # STB/LAT
 D1  > A5 # A
