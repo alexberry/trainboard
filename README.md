@@ -1,18 +1,34 @@
 # RGB + ESP8266
 
-## ESP to IN on RGB
+## Wiring Guide
+
+### ESP to IN on RGB (1/8 Scan, 16x32 Resolution)
 ```
-D0 > B7
-D1 > A5
-D2 > B5
-D4 > A8
-G  > B8
-D5 > A7
-D7 > A1
-D8 > A6
-G  > B6
+D0  > B7 # STB/LAT
+D1  > A5 # A
+D2  > B5 # B
+D4  > A8 # P_OE
+GND > B6 # Ground
+D5  > A7 # CLK
+D7  > A1 # R0 (or R1 where your board begins counting from 1)
+D8  > A6 # C (for 1/8 scan rate and above)
+GND > B4 # Additional ground / unused multiplex input
 ```
-## IN to OUT on RGB
+
+### ESP to IN on RGB (1/6 Scan, 32x64 Resolution)
+```
+D0  > B7 # STB/LAT
+D1  > A5 # A
+D2  > B5 # B
+D4  > A8 # P_OE
+D6  > B6 # D (for 1/16 scan rate and above) 
+D5  > A7 # CLK
+D7  > A1 # R0 (or R1 where your board begins counting from 1)
+D8  > A6 # C (for 1/8 scan rate and above)
+GND > B4 # Additional ground / unused multiplex input
+```
+
+### IN to OUT on RGB
 ```
 A4 > C2
 A3 > C1
@@ -20,3 +36,11 @@ A2 > D3
 B1 > C3
 B3 > D1
 ```
+
+## Examples
+
+[Pixeltime for 16x32 1/8 scan boards](examples/pixeltime-16x32.ino)
+
+[Pixeltime for 32x64 1/16 scan boards](examples/pixeltime-32x64.ino)
+
+
