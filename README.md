@@ -2,7 +2,7 @@
 
 ## Wiring Guide
 
-_In below tables, all pin references on the RGB side are referenced as excel cells, i.e. the top-left on input is A1 and bottom-right on output is D8__
+_In below tables, all pin references on the RGB side are referenced as excel cells, i.e. the top-left on input is A1 and bottom-right on output is D8_
 
 ### ESP to IN on RGB (1/8 Scan, 16x32 Resolution)
 ```
