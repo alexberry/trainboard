@@ -41,8 +41,8 @@ B3 > D1
 
 ## Examples
 
-[Pixeltime for 16x32 1/8 scan boards](examples/pixeltime-16x32.ino)
+[Pixeltime for 16x32 1/8 scan boards](examples/pixeltime-16x32)
 
-[Pixeltime for 32x64 1/16 scan boards](examples/pixeltime-32x64.ino)
+[Pixeltime for 32x64 1/16 scan boards](examples/pixeltime-32x64)
 
-
+[Hello Word for 16x32 1/8 scan boards](examples/helloworld-16x32)
