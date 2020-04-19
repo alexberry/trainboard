@@ -170,7 +170,7 @@ void setup() {
   //display.setBrightness(50);
 
   // Set driver chip type
-  //display.setDriverChip(FM6124);
+  display.setDriverChip(SHIFT);
 
 
   display.setFastUpdate(true);
