@@ -23,7 +23,7 @@ D0  > B7 # STB/LAT
 D1  > A5 # A
 D2  > B5 # B
 D4  > A8 # P_OE
-D6  > B6 # D (for 1/16 scan rate and above) 
+D6  > B6 # D (for 1/16 scan rate and above)
 D5  > A7 # CLK
 D7  > A1 # R0 (or R1 where your board begins counting from 1)
 D8  > A6 # C (for 1/8 scan rate and above)
@@ -52,3 +52,9 @@ B3 > D1
 [Hello Word for 16x32 1/8 scan boards](examples/helloworld-16x32/helloworld-16x32.ino)
 
 [Hello Word for 32x64 1/16 scan boards](examples/helloworld-32x64/helloworld-32x64.ino)
+
+### Pattern Test
+
+[Pattern_test for 16x32 1/8 scan boards](examples/pattern_test-16x32/pattern_test-16x32.ino)
+
+[Pattern_test for 32x64 1/16 scan boards](examples/pattern_test-32x64/pattern_test-32x64.ino)

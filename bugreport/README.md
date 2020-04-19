@@ -51,7 +51,7 @@ And here they are on github:
 
 ## Library Versions
 
-Here's a list of all libraries & software I've been using:
+Here's a list of all libraries & software I've been using, _note I have tried both master and the latest tag for PxMatrix_:
 
 Library | Version
 --- | ---
@@ -85,7 +85,7 @@ I have made efforts to follow [your troubleshooting guide](https://github.com/2d
 * Attempting to slow it down with setMuxDelay
 * Testing alternative drivers with setDriverChip
 * Continuity tested all cabling
-* Tested using patterntest.ino - _this actually appears to work as expected_.
+* Tested using patterntest.ino.
 * Pared-down to a simple [helloworld](https://github.com/alexberry/trainboard/blob/master/examples/helloworld-32x64/helloworld-32x64.ino) version of the code, confirmed as working at 8S and still not at 16S
 
 All to no avail. Any assistance would be greatly appreciated, I'm at a loss as to where to go next to resolve this.
