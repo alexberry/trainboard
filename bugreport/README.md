@@ -2,9 +2,15 @@
 
 Hi there. I've been having somewhat of an issue with using PxMatrix with a P4 display. I have got the point where I can reliably cause the code to work on a 1/8 Scan 16x32 display, but if I move the cables to the larger display and just reconfigure the code for 32x64 it simply doesn't work properly.
 
-# Video
+## Videos
+
+### Pixeltime
 
 I have recorded the resultant issue and have [uploaded it to youtube here](https://www.youtube.com/watch?v=kKVjqLSDeao).In the video I reset the esp immediately and then wait until it scrolls to the icon / colour-block test.
+
+### Pattern_test
+
+I have also recorded the patter_test and uploaded it [here](https://www.youtube.com/watch?v=oXgAmYN9Rmg). From the video, things look ok, however I have noticed that it is not symmetrical - there are 7 rows below the bottom line and 8 rows above the top line, suggesting an alignment issue perhaps?
 
 ## Code differences
 
@@ -33,9 +39,15 @@ Below are the diffs of the two files I used when switching from 8S to 16S:
 
 And here they are on github:
 
+### Pixeltime
 [1/8 Scan 16x32 pixeltime](https://github.com/alexberry/trainboard/blob/master/examples/pixeltime-32x64/pixeltime-32x64.ino)
 
 [1/16 Scan 32x64 pixeltime](https://github.com/alexberry/trainboard/blob/master/examples/pixeltime-32x64/pixeltime-32x64.ino)
+
+### Pattern_test
+[1/16 Scan 16x32 pattern_test](https://github.com/alexberry/trainboard/blob/master/examples/pattern_test-16x32/pattern_test-16x32.ino)
+
+[1/16 Scan 32x64 pattern_test](https://github.com/alexberry/trainboard/blob/master/examples/pattern_test-32x64/pattern_test-32x64.ino)
 
 ## Library Versions
 
@@ -52,6 +64,12 @@ Arduino IDE | 1.8.5
 ## Wiring
 
 I made sure wiring was identical, with the addition of connecting D for 1/16 Scan rate. I also attempted to connect not-in-use E to ground on arduino, to no good effect. The display has been powered by both a USB -> Barrel power supply and a dedicated 10A 5v power supply, neither solution made a difference.
+
+I have made my own wiring table for this, viewable [here](https://github.com/alexberry/trainboard#wiring-guide)
+
+Also, here's a photo:
+
+![wiring](https://github.com/alexberry/trainboard/bugreport/image/wiring.jpg).
 
 ## Hardware
 
