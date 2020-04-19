@@ -69,7 +69,7 @@ I have made my own wiring table for this, viewable [here](https://github.com/ale
 
 Also, here's a photo:
 
-![wiring](https://github.com/alexberry/trainboard/blob/master/bugreport/image/wiring.jpg).
+![wiring](https://raw.githubusercontent.com/alexberry/trainboard/master/bugreport/image/wiring.jpg).
 
 ## Hardware
 
