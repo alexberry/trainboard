@@ -1,12 +1,14 @@
 # Display corruption on P4 (16S 32x64) Display - pixeltime
 
+_The body of this ticket is taken from [markdown in my repo](https://github.com/alexberry/trainboard/blob/master/bugreport/README.md)_
+
 Hi there. I've been having somewhat of an issue with using PxMatrix with a P4 display. I have got the point where I can reliably cause the code to work on a 1/8 Scan 16x32 display, but if I move the cables to the larger display and just reconfigure the code for 32x64 it simply doesn't work properly.
 
 ## Videos
 
 ### Pixeltime
 
-I have recorded the resultant issue and have [uploaded it to youtube here](https://www.youtube.com/watch?v=kKVjqLSDeao).In the video I reset the esp immediately and then wait until it scrolls to the icon / colour-block test.
+I have recorded the resultant issue and have uploaded it to youtube [here](https://www.youtube.com/watch?v=kKVjqLSDeao). In the video I reset the esp immediately and then wait until it scrolls to the icon / colour-block test.
 
 ### Pattern_test
 
@@ -63,7 +65,7 @@ Arduino IDE | 1.8.5
 
 ## Wiring
 
-I made sure wiring was identical, with the addition of connecting D for 1/16 Scan rate. I also attempted to connect not-in-use E to ground on arduino, to no good effect. The display has been powered by both a USB -> Barrel power supply and a dedicated 10A 5v power supply, neither solution made a difference.
+I made sure wiring was identical, with the addition of connecting D for 1/16 Scan rate. I also attempted to connect not-in-use E to ground on arduino, to no good effect. The display has been powered by both a USB -> Barrel power supply and a dedicated 10A 5v power supply, neither solution made a difference. _All cables used on 8S were re-used on 16S, including cross-patches between IN and OUT_.
 
 I have made my own wiring table for this, viewable [here](https://github.com/alexberry/trainboard#wiring-guide)
 
